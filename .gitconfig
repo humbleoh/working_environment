@@ -1,0 +1,20 @@
+[diff]
+    tool = meld
+
+[difftool "meld"]
+    #cmd = "meld \"$LOCAL\" \"$REMOTE\" &>/dev/null" 
+    cmd = "'/c/Program Files/Beyond Compare 4/BCompare.exe' $LOCAL $REMOTE"
+
+[difftool "meld"]
+    prompt = false
+
+[merge]
+    tool = meld
+
+[mergetool "meld"]
+    cmd = "meld \"$REMOTE\" \"$LOCAL\" \"$MERGED\" &>/dev/null" 
+    #cmd = "'/c/Program Files/Beyond Compare 4/BCompare.exe' $REMOTE $MERGED $LOCAL" 
+
+[user]
+	name = my_name
+	email = my_email@email.com
